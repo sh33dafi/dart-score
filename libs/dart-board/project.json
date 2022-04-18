@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/dart-board",
+  "sourceRoot": "libs/dart-board/src",
+  "prefix": "darts-score",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/dart-board"],
+      "options": {
+        "jestConfig": "libs/dart-board/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/dart-board/src/**/*.ts",
+          "libs/dart-board/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

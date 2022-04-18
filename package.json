@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "@nrwl/angular": "13.10.2",
+    "d3": "7.4.4",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
@@ -39,6 +40,7 @@
     "@nrwl/linter": "13.10.2",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "13.10.2",
+    "@types/d3": "7.1.0",
     "@types/jest": "27.0.2",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
