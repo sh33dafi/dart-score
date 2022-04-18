@@ -1,0 +1,28 @@
+{
+  "root": "apps/darts-score-e2e",
+  "sourceRoot": "apps/darts-score-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/darts-score-e2e/cypress.json",
+        "devServerTarget": "darts-score:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "darts-score:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/darts-score-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["darts-score"]
+}

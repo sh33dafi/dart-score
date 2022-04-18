@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "darts-score": "apps/darts-score",
+    "darts-score-e2e": "apps/darts-score-e2e"
+  }
+}
